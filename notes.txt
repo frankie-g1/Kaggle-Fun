@@ -1,0 +1,19 @@
+Apply vs ApllyMap vs ApllyMap
+
+Aplly's input can be a whole row, or a column at a time.
+If apply's dataframe is a singular column of a dataframe, then the input is element by element down the column into the function - going down the col.
+If you pass multiple columns, the input becomes whole column based. Each iteration's input is 1 whole column.
+If you pass 1 column, the input becomes row based.
+
+
+Map is meant for mapping the values passed. The same can be achieved with apply, but the dictionary mapping that .map can achieve is faster than apply and takes less syntax.
+The ability to also use df['Agency'].map({'This job position agency is {}'.format) will pass the element of the column iteratively using this as the map.
+
+Another example is df['col'].map({123:'123'}), and the elements within this column that do not match 123 will become NaN. Those that match 123 will become '123'
+
+
+
+ApplyMap is meant for passing each element of the dataframe through a function. Its intended input is the whole dataframe, and will go thru each element within it, 1 cell at a time.
+
+
+
