@@ -2,8 +2,14 @@
 import pandas as pd
 import numpy as np
 
-wheat_df = pd.read_csv('D:\d_downloads\Kaggle Datasets\International wheat production statistics.csv')
+df = pd.read_csv('D:\d_downloads\Kaggle Datasets\International wheat production statistics.csv')
 
+# %%
+countrys = ['Canada']
+df = df.query('Country == @countrys').filter(regex='[0-9]')
+print(df)
+print(type(df))
+df[['1997', '1996']]
 # %%
 
 # Check out Country column, or see if you can transpose it
