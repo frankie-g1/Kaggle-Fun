@@ -1,0 +1,16 @@
+python -m pip show scikit-learn
+
+    Show's how the installation went 
+
+
+python -m pip freeze  # to see all packages installed in the active virtualenv
+
+
+
+
+python -c "import sklearn; sklearn.show_versions()"
+    Show's python version, executable path, and machine
+    Show's python dependencies
+    
+    Show's open mp and other sites of threadpooling ie (technical stuff of certain packages - maybe important later)
+            Show's location, version, user & internal api, prefix, etc.

@@ -1,0 +1,12 @@
+Work on ordering : 
+Filter by year
+    then order them by X stat or column
+
+    add column of ranking based on order by order
+
+Find averages of say percentage or number#
+
+    then order by
+
+    add column of ranking based on order by order
+

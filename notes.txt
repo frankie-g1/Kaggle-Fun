@@ -17,3 +17,14 @@ ApplyMap is meant for passing each element of the dataframe through a function. 
 
 
 
+
+
+inplacebool, default False
+    Will affect all other dataframes which point to that dataframe in memory
+
+
+Dropna parameter:
+    subset:column label or sequence of labels, optional
+    Labels along other axis to consider, e.g. if you are dropping rows these would be a list of columns to include.
+
+    Could be particularly useful if certain columns are pivotal to finding relevant findings, and thus dropping any rows which have NaN for these columns! 
